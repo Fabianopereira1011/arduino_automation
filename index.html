@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="pt-br" http-equiv="Content-Language">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+* {
+	margin: 20;
+	box-sizing: border-box;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+.layoutback{
+
+			background-color:#666699;
+	
+}
+
+.conteudo{
+	max-width:1000px;
+	border-radius:10px;
+	border:medium black solid;
+	 background-color: #CDB9DF;
+}
+
+.toptitulo{
+    border-radius:14px;
+	border:3px silver solid;
+	box-shadow:inset 0px 0px 90px #333; 
+}
+
+.horas{
+	
+}
+
+
+.efeito_ON{#edda09
+	          
+}
+
+.luzArandelas{
+		 border:medium black solid;		 
+         box-shadow:inset 0px 0px 50px #333;
+         border-radius: 5em;
+		 	 
+         
+         text-align:center;
+         margin-bottom:1em;	
+         
+         height:4em;
+}
+
+/*
+div.luzArandelas p {
+   margin: 0;
+   position: absolute;               
+   top: 50%;                         
+   transform: translate(0, -50%);
+   text-align:center;
+} 
+*/
+.luzTela{
+		 border:medium black solid;		 
+         box-shadow:inset 0px 0px 50px #333;
+         border-radius: 5em;
+		 	 
+         
+         text-align:center;
+         margin-bottom:1em;	
+         
+         height:4em;
+}
+/*
+div.luzTela p {
+   margin: 0;
+   position: absolute;               
+   top: 50%;                         
+   transform: translate(0, -50%);
+   text-align:center;
+} 
+*/
+
+.luzPiso{
+		 border:medium black solid;		 
+         box-shadow:inset 0px 0px 50px #333;
+         border-radius: 5em; 	 	 
+         
+         text-align:center;
+         margin-bottom:1em;	
+         
+         height:4em;
+}
+
+/*div.luzPiso p {
+   margin: 0;
+   position: absolute;
+   top: 50%;                    
+   transform: translate(0, -50%);
+   text-align:center;
+}   
+*/
+.layoutArCondicionado{
+	
+}
+
+.temperatura{
+	font: asaaaaaa serif;
+	font-size: 120px;
+	color: #FF0000;
+	border-radius: 30px;
+	box-shadow: inset 0px 0px 30px #333;
+	position: relative;
+	border: medium black solid;
+	text-align: center;
+}
+
+.arDisplay{
+			border-radius:30px;
+			min-height:300px;
+			box-shadow:inset 0px 0px 30px #333;
+            position:relative;
+		    border:medium black solid;
+		    margin-left: 5%
+}
+
+.arMais{		
+		 border:medium black solid;		 
+         box-shadow:inset 0px 0px 35px #333;
+         border-radius: 5em;
+		 background-color: #FFFFFF;		 
+         
+         text-align:center;
+         margin-bottom:1em;	
+         font-size:1.5em;
+         font:AR BERKLEY;        
+         height:auto;
+}
+
+.arMenos{		
+		 border:medium black solid;		 
+         box-shadow:inset 0px 0px 35px #333;
+         border-radius: 5em;
+		 background-color: #FFFFFF;	
+		         
+         text-align:center;
+         margin-bottom:1em;	
+         font-size:1.5em;
+         font:AR BERKLEY;        
+         height:auto;
+}
+
+.horas{
+	 max-height:40px
+}
+.selecSala{
+		border-radius: 1em;
+		 border:medium black solid;		 
+         box-shadow:inset 0px 0px 30px #333;
+
+}
+.projetor{
+		 border:medium black solid;		 
+         box-shadow:inset 0px 0px 50px #edda09;
+         border-radius: 5em;
+         padding: 0px 0px 0px 0px;
+		 	 
+         
+         text-align:center;
+         margin-bottom:1em;	
+         
+         height:4em;
+         margin: 10% 10% 10% 10%;
+         /*max-width:10%;*/
+}
+
+
+.areaB{
+			border: thin lime solid;
+			border-radius: 2em;
+			box-shadow:inset 0px 0px 50px #333;	
+		    color:red;
+}
+
+button{	
+		 min-height:1rem;
+		/* min-width:15em;*/	 
+         box-shadow:inset 0px 0px 50px #333;
+         border-radius: 2em;
+		 border:medium black solid;		 
+         box-shadow:inset 0px 0px 30px #333;
+         position:relative;
+         border-bottom:2em;
+         margin:0em 1px 0px 1em;
+}
+
+
+
+/*
+p {
+   margin: 0px;
+   position: absolute;               
+   top: 50%;                         
+   transform: translate(0, -50%);
+   text-align:center;
+} 
+
+
+h2 {
+	     padding: 1em;	        
+	     position: absolute;
+         top: 50%;
+         left: 50%;
+	     margin-right: -50%;
+	     transform: translate(-50%, -50%);
+
+}
+  
+*/
+
+
+.botoes{	
+			border-radius:30px;
+			position:relative;	
+		    min-width:13rem;
+		    border: thin lime solid;
+		    box-shadow:inset 0px 0px 50px #000000;		    
+}
+
+.ligarAr{		
+		 border:medium black solid;		 
+         box-shadow:inset 0px 0px 35px #333;
+         border-radius: 5em;
+		 background-color: #FFFFFF;		 
+         
+         text-align:center;
+         margin-bottom:1em;	
+         font-size:1.5em;
+         font:AR BERKLEY;        
+         height:auto;
+}
+
+TextArea1{
+		 	border-radius:30px;
+			box-shadow:inset 0px 0px 30px #333;
+            position:relative;
+		    border:medium black solid;
+		    text-align:center;
+
+	
+}
+
+
+.on{
+	box-shadow:inset 0px 0px 30px #edda09;
+	}
+
+.off{
+    box-shadow:inset 0px 0px 30px #333; 
+    }	
+	
+
+
+
+#main { display: flex; }
+#main > article { order: 2; min-width: 12em; flex:1; }
+#main > nav     { order: 1; width: 200px; }
+#main > aside   { order: 3; width: 200px; }
+
+</style> </head>
+  <body style=" background-color: #CDB9DF">
+    <title>Automação</title>
+    <div class="toptitulo">
+      <h1>Automação</h1>
+    </div>
+    <hr>
+    <div class="areaB">
+      <select name="sala 1" style="width: 128px; background-color:gray; font-size:25px; ">
+        <option>sala 1</option>
+        <option>sala 2</option>
+        <option>sala 3</option>
+        <option>sala 4</option>
+        <option>sala 5</option>
+      </select>
+    </div>
+    <hr>
+    <div class="horas">
+      <h1>15:00 horas</h1>
+    </div>
+    <hr>
+    <div class="botoes col-3 col-m-3 ">
+      <div id="projetor" class="projetor" onmouseover="mouseOver()" onmouseout="mouseOut()">
+        <h2>botao1 </h2>
+      </div>
+      <div id="luzArandelas" class="luzArandelas">
+        <h2>luz Arandelas</h2>
+      </div>
+      <div id="luzTela" class="luzTela">
+        <h2>luz tela</h2>
+      </div>
+      <div id="luzPiso" class="luzPiso">
+        <h2>luz piso</h2>
+      </div>
+    </div>
+    <div class=" arDisplay col-6 col-m-6">
+      <header>
+        <hr>
+        <hr>
+        <hr>
+        <h1>Ar Condicionado</h1>
+      </header>
+      <div id="main">
+        <article>
+          <div class="temperatura" id="temp_Ar">22</div>
+        </article>
+        <nav>
+          <div class="ligarAr">off</div>
+          <div class="arMais">+</div>
+          <div class="arMenos">-</div>
+        </nav>
+        <aside></aside>
+      </div>
+      <footer>
+        <hr>
+        <hr>
+        <hr></footer>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+  
+
+    $( document ).ready(function() 
+{	
+    var luzTela = 0;
+    var sluzTela = "success";
+  
+  
+  //##########################################################################################################################  
+
+					
+$('.luzTela').delay(700).click(function() { 
+  
+  //alert("click luzTela, antes do if");
+  
+  if ( luzTela == 0){ 
+    // sluzTela = "status";
+                    				
+	                   $.get("http://192.168.0.200/led?state=on", function(data, status){
+                             sluzTela = status;
+                         
+                         
+                         
+                         //      alert("click luzTela, function before if"+ status);                                           
+                         //      alert("click luzTela, function after if");
+                         //      $(".luzTela").addClass("on");
+                         //      luzTela = 1;
+                         // alert("Falha de comunicação \n comando não executado.");
+                                           
+                    
+                           });
+                       // delay(700);
+                       
+                       // alert(sluzTela);
+
+                         luzTela = 1;  
+                         $(".luzTela").addClass("on");
+                           
+    
+                    }
+  else {
+       $(".luzTela").removeClass("on")
+       
+       $.get( "http://192.168.0.200/led?state=off", {  } );  
+       
+       luzTela = 0;             
+                    
+       }  
+  
+  
+  if ( sluzTela != "success" )
+      {
+      alert("Falha de comunicação \n comando não executado.");
+      $(".luzTela").removeClass("on");
+      luzTela = 0;
+      }
+                  
+  
+						
+					                     });
+  
+  //##########################################################################################################################  
+  
+
+$('.luzPiso').click(function() {
+									$.get("http://192.168.0.200/led?state=off", function(data, status){
+                    alert("Data: " + data + "\nStatus: " + status);
+                    });
+					
+    $.get( "http://192.168.0.200/led?state=off", { } )	;
+//$.post( "http://192.168.0.104/led?state=off");
+	
+					});	
+  //##########################################################################################################################  
+  
+  
+});
+
+</script>
+  </body>
+</html>
